@@ -1,0 +1,28 @@
+1. Create Virtual Environment
+    python -m venv env
+
+2. Activate Virtual Environment
+    source venv/bin/activate
+    
+3. Install Django:
+    pip install django
+
+4. Verify Django is installed:
+    python -m django --version
+
+5. Start Project (New Project):
+    (django-admin startproject mysite .)
+
+6. To start server :
+    python manage.py runserver
+
+7. Django Application:
+    python manage.py startapp polls
+
+8. After creating url for polls:
+    python manage.py runserver
+
+9. Create models in polls/models
+    Add "polls.apps.PollsConfig", in settings.py in INSTALLED_APPS
+    run - python manage.py makemigrations polls - to create migrations for those changes.
+    run - python manage.py migrate - to appl those changes to the database
